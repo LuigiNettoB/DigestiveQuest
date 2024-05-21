@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package br.com.digestivequestgame.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+/**
+ *
+ * @author AMD
+ */
+public class Conexao {
+    public Connection getConnection() throws SQLException {
+        Connection conexao = DriverManager.getConnection("jdbc:mysql://mysql-2745fedb-maua-4aed.e.aivencloud.com:10457/defaultdb", "avnadmin", "AVNS_moDZ172ZC0LxR0HNzj3");
+        return conexao;
+        
+    }
+}
